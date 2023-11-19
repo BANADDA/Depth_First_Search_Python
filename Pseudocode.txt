@@ -1,0 +1,15 @@
+DFS(Graph G, Node start):
+    visited = Set()
+    traversal_order = []
+
+    DFSUtil(start, visited, traversal_order)
+
+    return traversal_order
+
+DFSUtil(current, visited, traversal_order):
+    visited.add(current)
+    traversal_order.append(current)
+
+    for each neighbor of current:
+        if neighbor not in visited:
+            DFSUtil(neighbor, visited, traversal_order)
