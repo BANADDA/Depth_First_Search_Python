@@ -1,0 +1,11 @@
+// Depth First Search Visualization
+digraph {
+	1 -> 2
+	3 -> 4
+	2 -> 3
+	node [fillcolor=skyblue shape=circle style=filled]
+	edge [arrowsize=0.5]
+	1 -> 2 [color=red penwidth=2]
+	2 -> 3 [color=red penwidth=2]
+	3 -> 4 [color=red penwidth=2]
+}
